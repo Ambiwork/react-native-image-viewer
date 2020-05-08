@@ -24,7 +24,7 @@ export default (
     imageStyle: {},
     container: { backgroundColor }, // 多图浏览需要调整整体位置的盒子
     moveBox: { flexDirection: 'row', alignItems: 'center' },
-    menuContainer: { position: 'absolute', width, height, left: 0, bottom: 0, zIndex: 12 },
+    menuContainer: { position: 'absolute', bottom: 0, zIndex: 12 },
     menuShadow: {
       position: 'absolute',
       width,

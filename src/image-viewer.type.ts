@@ -52,6 +52,11 @@ export class Props {
   public footerContainerStyle?: object = {};
 
   /**
+   * style props for the menu container
+   */
+  public menuContainerStyle?: object = {};
+
+  /**
    * Menu Context Values
    */
   public menuContext?: any = { saveToLocal: 'save to the album', cancel: 'cancel' };

@@ -659,7 +659,7 @@ export default class ImageViewer extends React.Component<Props, State> {
     }
 
     return (
-      <View style={this.styles.menuContainer}>
+      <View style={[this.styles.menuContainer, this.props.menuContainerStyle]}>
         <View style={this.styles.menuShadow} />
         <View style={this.styles.menuContent}>
           <TouchableHighlight underlayColor="#F2F2F2" onPress={this.saveToLocal} style={this.styles.operateContainer}>
