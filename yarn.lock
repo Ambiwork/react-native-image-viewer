@@ -752,6 +752,11 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@react-native-community/cameraroll@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cameraroll/-/cameraroll-1.6.0.tgz#2a4f9318fb53b5b2576269085c60ec7aced764c8"
+  integrity sha512-0P6IDqFlpWmuqLBFvm4WsQ6QR6E7WDadtFQiug/zU4Ieu6wcz70pgbB6yG3uQwGqwQf6HgFq95Z7+SHV3k5hpw==
+
 "@react-native-community/cli-debugger-ui@^4.8.0":
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-4.8.0.tgz#9a6419b29be69422e0056bbb1874775750351d22"

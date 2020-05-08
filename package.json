@@ -18,6 +18,7 @@
   "author": "ascoders",
   "license": "MIT",
   "dependencies": {
+    "@react-native-community/cameraroll": "^1.6.0",
     "react-native-image-pan-zoom": "https://github.com/Ambiwork/react-native-image-zoom#master"
   },
   "peerDependencies": {
