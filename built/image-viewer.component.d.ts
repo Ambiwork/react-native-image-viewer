@@ -23,7 +23,7 @@ export default class ImageViewer extends React.Component<Props, State> {
     /**
      * props 有变化时执行
      */
-    init(nextProps: Props): any;
+    init(nextProps: Props): void;
     /**
      * reset Image scale and position
      */
@@ -83,13 +83,13 @@ export default class ImageViewer extends React.Component<Props, State> {
     /**
      * 获得整体内容
      */
-    getContent(): any;
+    getContent(): JSX.Element;
     /**
      * 保存当前图片到本地相册
      */
     saveToLocal: () => void;
-    getMenu(): any;
+    getMenu(): JSX.Element | null;
     handleLeaveMenu: () => void;
     handleSwipeDown: () => void;
-    render(): any;
+    render(): JSX.Element;
 }

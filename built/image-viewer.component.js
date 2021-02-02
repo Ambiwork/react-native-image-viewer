@@ -38,7 +38,7 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
     __setModuleDefault(result, mod);
     return result;
 };
@@ -177,7 +177,7 @@ var ImageViewer = /** @class */ (function (_super) {
             react_native_1.Animated.timing(_this.positionX, {
                 toValue: _this.positionXNumber,
                 duration: _this.props.pageAnimateTime,
-                useNativeDriver: false
+                useNativeDriver: !!_this.props.useNativeDriver
             }).start();
             var nextIndex = (_this.state.currentShowIndex || 0) - 1;
             _this.setState({
@@ -204,7 +204,7 @@ var ImageViewer = /** @class */ (function (_super) {
             react_native_1.Animated.timing(_this.positionX, {
                 toValue: _this.positionXNumber,
                 duration: _this.props.pageAnimateTime,
-                useNativeDriver: false
+                useNativeDriver: !!_this.props.useNativeDriver
             }).start();
             var nextIndex = (_this.state.currentShowIndex || 0) + 1;
             _this.setState({
@@ -271,7 +271,7 @@ var ImageViewer = /** @class */ (function (_super) {
          */
         _this.saveToLocal = function () {
             if (!_this.props.onSave) {
-                cameraroll_1.default.saveToCameraRoll(_this.props.imageUrls[_this.state.currentShowIndex || 0].url);
+                cameraroll_1.default.save(_this.props.imageUrls[_this.state.currentShowIndex || 0].url, { type: 'photo' });
                 _this.props.onSaveToCamera(_this.state.currentShowIndex);
             }
             else {
@@ -308,7 +308,7 @@ var ImageViewer = /** @class */ (function (_super) {
             react_native_1.Animated.timing(this.fadeAnim, {
                 toValue: 1,
                 duration: 200,
-                useNativeDriver: false
+                useNativeDriver: !!this.props.useNativeDriver
             }).start();
         }
     };
@@ -343,7 +343,7 @@ var ImageViewer = /** @class */ (function (_super) {
             react_native_1.Animated.timing(_this.fadeAnim, {
                 toValue: 1,
                 duration: 200,
-                useNativeDriver: false
+                useNativeDriver: !!nextProps.useNativeDriver
             }).start();
         });
     };
@@ -437,7 +437,7 @@ var ImageViewer = /** @class */ (function (_super) {
         react_native_1.Animated.timing(this.positionX, {
             toValue: this.standardPositionX,
             duration: 150,
-            useNativeDriver: false
+            useNativeDriver: !!this.props.useNativeDriver
         }).start();
     };
     /**

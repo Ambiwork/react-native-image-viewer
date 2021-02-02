@@ -81,6 +81,11 @@ export declare class Props {
      */
     pageAnimateTime?: number;
     /**
+     * 是否启用原生动画驱动
+     * Whether to use the native code to perform animations.
+     */
+    useNativeDriver?: boolean;
+    /**
      * 长按图片的回调
      */
     onLongPress?: (image?: IImageInfo) => void;

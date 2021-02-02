@@ -14,18 +14,18 @@
   "author": "ascoders",
   "license": "MIT",
   "dependencies": {
-    "@react-native-community/cameraroll": "^1.6.0",
+    "@react-native-community/cameraroll": "^4.0.1",
     "react-native-image-pan-zoom": "https://github.com/Ambiwork/react-native-image-zoom#master"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
+    "react": "~16.8.6 || ~16.9.0 || ~16.11.0 || ~16.13.1 || ~17.0.1",
+    "react-native": "^0.60.6 || ^0.61.5 || ^0.62.2 || ^0.63.2 || ^0.64.0 || 1000.0.0"
   },
   "devDependencies": {
     "@types/react": "*",
     "@types/react-native": "*",
-    "react": "*",
-    "react-native": "*",
-    "typescript": "3.0.1"
+    "react": "16.11.0",
+    "react-native": "0.62.2",
+    "typescript": "^3.4.1"
   }
 }
